@@ -7,7 +7,7 @@ This repository contains a web automation script created from scratch to execute
 - Java
 
 ---
-The main files can be found at:
+The main files can be found at _./TestCucumber/.../_ 
 - .feature file - [ryanair/TestCucumber/src/test/resources/features/access_homepage.feature](https://github.com/claudiopacheco/ryanair/blob/main/TestCucumber/src/test/resources/features/access_homepage.feature)
 - Steps file - [ryanair/TestCucumber/src/test/java/steps/Access_homepageSteps.java](https://github.com/claudiopacheco/ryanair/blob/main/TestCucumber/src/test/java/steps/Access_homepageSteps.java)
 - Page elements and methods - [ryanair/TestCucumber/src/main/java/pages/HomePage.java](https://github.com/claudiopacheco/ryanair/blob/main/TestCucumber/src/main/java/pages/HomePage.java)
