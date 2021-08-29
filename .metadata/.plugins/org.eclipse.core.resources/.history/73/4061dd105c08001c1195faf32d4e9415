@@ -1,0 +1,38 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+	
+	private WebDriver driver;
+	
+	private String expectedPageTitle = "Official Ryanair website | Book direct for the lowest fares | Ryanair.com";
+	private By depatureLocation = By.id("input-button__departure");
+	private By cookiesAccept = By.cssSelector("button.cookie-popup-with-overlay__button");
+	
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	public void loadHomepage() {
+		driver.get("https://www.ryanair.com/gb/en");
+	}
+	
+	public String getActualPageTitle() {
+		return driver.getTitle();
+	}
+
+	public String getExpectedPageTitle() {
+		return expectedPageTitle;
+	}
+	
+	public By getDepatureLocation() {
+		return depatureLocation;
+	}
+
+	public By getCookiesAccept() {
+		return cookiesAccept;
+	}
+
+}

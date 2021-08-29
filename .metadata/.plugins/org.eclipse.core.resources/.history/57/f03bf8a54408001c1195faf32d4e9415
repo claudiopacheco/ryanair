@@ -1,0 +1,9 @@
+Feature: Acessar o site https://conexaoqa.herokuapp.com/
+
+  # Eu quero acessar o site e realizar o login
+  Scenario: Realizer login no site Conexao QA
+    Given que acesso o site Conexao QA
+    And pressiono enter
+    Then é exibido tela de login
+    When clico em login
+    Then tela de acesso de login é exibida

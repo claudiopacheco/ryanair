@@ -1,0 +1,6 @@
+1630195212258	Encapsulate field 'lisbonAirport'
+1630195446118	Encapsulate field 'departUserInput'
+1630195547381	Encapsulate field 'expectedDepartUserInput'
+1630196077103	Encapsulate field 'expectedDestinationUserInput'
+1630196260992	Encapsulate field 'destinationLocation'
+1630196311339	Encapsulate field 'parisBeauvaisAirport'

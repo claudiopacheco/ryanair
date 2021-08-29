@@ -1,0 +1,34 @@
+import io.cucumber.java.en.*;
+
+public class Acesso {
+	@Given("que acesso o site Conexao QA")
+	public void que_acesso_o_site_conexao_qa() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("pressiono enter")
+	public void pressiono_enter() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("sera exibido tela de login")
+	public void sera_exibido_tela_de_login() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@When("clico em login")
+	public void clico_em_login() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("tela de acesso de login sera exibida")
+	public void tela_de_acesso_de_login_sera_exibida() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

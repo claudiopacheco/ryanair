@@ -1,0 +1,13 @@
+package pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class HomePage {
+	
+	private WebDriver driver;
+	
+	public void loadHomepage() {
+		driver.get("https://www.ryanair.com/gb/en");
+	}
+
+}

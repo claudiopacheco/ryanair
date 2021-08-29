@@ -1,0 +1,9 @@
+Feature: Acessar o site https://conexaoqa.herokuapp.com/
+
+  # Eu quero acessar o site e realizar o login
+  Scenario: Login into ConexaoQA
+    Given I access ConexaoQA
+    And press Enter
+    Then login screen is loaded
+    When I click in Login
+    Then access screen is loaded

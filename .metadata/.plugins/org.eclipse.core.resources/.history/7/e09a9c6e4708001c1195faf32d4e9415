@@ -1,0 +1,8 @@
+@featureTest
+Feature: Prove the concept of my script
+
+@Scenario1
+  Scenario: My first Test
+    Given This is my first step
+    When This is my second step
+    Then This is my third step

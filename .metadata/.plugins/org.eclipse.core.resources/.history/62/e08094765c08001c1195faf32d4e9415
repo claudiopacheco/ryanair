@@ -1,0 +1,59 @@
+package steps;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.Assert.assertEquals;
+
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.HomePage;
+
+public class Access_homepageSteps {
+	
+	private static WebDriver driver;
+	private HomePage homePage = new HomePage(driver);
+	
+	@Before
+	public static void startup() {
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+	}
+
+	@Given("user navigates to the homepage")
+	public void user_navigates_to_the_homepage() {
+		homePage.loadHomepage();
+		assertEquals(homePage.getExpectedPageTitle(), homePage.getActualPageTitle());
+		driver.findElement(homePage.getCookiesAccept()).click();
+	}
+
+	@When("the user provides a Departure location")
+	public void the_user_provides_a_departure_location() {
+		driver.findElement(homePage.getDepatureLocation()).sendKeys(Keys.chord(Keys.CONTROL, "a"));
+		driver.findElement(homePage.getDepatureLocation()).sendKeys("Lisbon");
+		driver.findElement(homePage.getLisbonAirport()).click();
+		//assertEquals()
+	    
+	}
+
+	@Then("the page loads a list of airports")
+	public void the_page_loads_a_list_of_airports() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	
+	@After
+	public static void teardown() {
+		//driver.quit();
+	}
+	
+}

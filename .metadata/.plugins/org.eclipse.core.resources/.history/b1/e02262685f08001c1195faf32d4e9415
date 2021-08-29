@@ -1,0 +1,10 @@
+Feature: Search for a trip
+  As a user
+  I want to access the homepage
+  So that I can perform a search for a trip
+
+  Scenario: Search for a Departure location
+    Given user navigates to the homepage
+    When the user provides a Departure location
+    And the user provides a Destination location
+    Then the page loads a list of airports
